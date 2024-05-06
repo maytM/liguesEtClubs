@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Favoris</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personnalisé -->
+    <style>
+        .table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contenu principal -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2>Mes Favoris</h2>
+            <!-- Nombre d'éléments en favoris -->
+            <p>Nombre d'éléments en favoris : <span id="count">X</span></p>
+            <!-- Tableau des favoris -->
+            <table class="table table-bordered table-responsive">
+                <thead>
+                    <tr>
+                        <th>Entité Parent</th>
+                        <th>Entité Enfant</th>
+                        <th>Image</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ligne du tableau pour chaque favori -->
+                    <tr>
+                        <td>Nom de l'Entité Parent</td>
+                        <td><a href="Detail.html">Nom de l'Entité Enfant</a></td>
+                        <td><img src="images/ligue1.png" alt="Image de l'entité enfant" width="100"></td>
+                        <!-- Formulaire pour supprimer de favoris -->
+                        <td>
+                            <form action="https://www.w3schools.com/action_page.php" method="POST">
+                                <input type="hidden" name="nom" value="Nom de l'Entité Enfant">
+                                <button type="submit" class="btn btn-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <!-- Répétez cette structure pour chaque favori -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+<!-- Icônes Bootstrap -->
+<script src="https://unpkg.com/bootstrap-icons@1.7.0/font/bootstrap-icons.js"></script>
+
+</body>
+</html>
