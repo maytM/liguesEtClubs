@@ -111,28 +111,56 @@ main a > .entity-card{
 
 }
 
+.table img{
+   width: 50px;
+}
 
-/*.image_float img{
-       width:40vw;
-       animation: float 3s linear infinite;
+/* ballon flotant */
+.image_float img {
+   animation: float 3s linear infinite; /* rotate 3s linear infinite;  Ajout de l'animation de rotation */
+   border-radius: 50%;
+   width: 100px;
+   margin-top: 3rem;
+}
+
+@keyframes float {
+   0%, 100% {
+       transform: translateY(0rem);
    }
+   50% {
+       transform: translateY(-3.5rem);
+   }
+}
 
-@keyframes float{
-    0%, 100%{
-        transform: translateY(0rem);
-    }
-    50%{
-        transform: translateY(-3.5rem);
-    }
-}*/
+.image_rotation img {
+   animation: rotate 4s linear infinite; /* Ajout de l'animation de rotation */
+   border-radius: 50%;
+   width: 70px;
+   margin-top: 3rem;
+}
 
+@keyframes rotate {
+   0% {
+       transform: rotate(0deg); 
+   }
+   100% {
+       transform: rotate(360deg); 
+   }
+}
 
 /* search form*/
 .search-results {
-   background-color: #f8f9fa;
+   background-color: transparent;
    padding: 20px;
    border-radius: 10px;
 }
+
+.search-results .card-body{
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+}
+
 .search-form {
    background-color: #f8f9fa;
    padding: 20px;
@@ -145,7 +173,7 @@ main a > .entity-card{
    transition: box-shadow 0.3s ease;
 }
 .entity-card:hover {
-   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+   box-shadow: 0px 0px 15px 0px var(--blue);
 }
 
 /* css footer*/
@@ -155,11 +183,16 @@ footer span{
 }
 
 @media (max-width:992px) {
-
    #accordionExample{
       margin-top: 2em;
    }
 }
 
+@media (max-width:767px) {
+  
+   main .section_listeClubs-formulaire{
+      flex-direction: column-reverse;
+   }
+}
 
 

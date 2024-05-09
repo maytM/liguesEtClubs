@@ -13,7 +13,7 @@
 <header class="container-fluid px-0">
     <nav class="navbar navbar-expand-md py-md-0 bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Accueil.html"><i class="fa-regular fa-futbol"></i> Ligues de football</a>
+          <a class="navbar-brand" href="Accueil.html#ligues"><i class="fa-regular fa-futbol"></i> Ligues de football</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,40 +41,54 @@
         </div>
       </nav>
 </header>
-<main class="container  p-5 flex-grow-1">
-    <div class="row g-4 mt-5">
+<main class="container-fluid  p-5 flex-grow-1">
+    <div class="row mt-4">
+        <div class="col-10">
+         <form action="">
+          <div class="table-responsive-lg">
+            <table class="table ">
+                <thead class="table-dark">
+                    <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Nom du club</th>
+                    <th scope="col">Nom de la ligue</th>
+                    <th scope="col">Pays</th>
+                    <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row"><img src="images/manCity.png" class="img-fluid" alt="Image de l'entité"></th>
+                    <td>Manchester City</td>
+                    <td>Premier League</td>
+                    <td>Angleterre</td>
+                    <td>
+                      <button type="submit" class="btn btn-danger mb-3"> <i class="fa fa-trash"></i> </button>
+                    </td>
+                    </tr>
 
-        <h1>LES CLUBS FAVORIS</h1>
-
-        <div class="table-responsive-md">
-
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                </tr>
-                <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                </tr>
-                
-            </tbody>
-        </table>
+                    <tr>
+                      <th scope="row"><img src="images/barca.png" class="img-fluid" alt="Image de l'entité"></th>
+                      <td>Real Madrid</td>
+                      <td>LaLiga</td>
+                      <td>Espagne</td>
+                      <td>
+                        <button type="submit" class="btn btn-danger mb-3"> <i class="fa fa-trash"></i> </button>
+                      </td>
+                      </tr>
+                                   
+                </tbody>
+            </table>
+            </div>
+         </form>
         </div>
 
+        <div class="col-2 ">
+          <div class="text-center image_float">
+            <img src="images/ballon.png" class="img-fluid" alt="">
+        </div>
+        </div>
+       
       </div>
 </main>
 <footer class="container-fluid bg-body-tertiary  py-4">

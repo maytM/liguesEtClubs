@@ -13,7 +13,7 @@
 <header class="container-fluid px-0">
     <nav class="navbar navbar-expand-md py-md-0 bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Accueil.html"><i class="fa-regular fa-futbol"></i> Ligues de football</a>
+          <a class="navbar-brand" href="Accueil.html#ligues"><i class="fa-regular fa-futbol"></i> Ligues de football</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,13 +26,13 @@
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                     
-                  <a class="nav-link" aria-current="page" href="Accueil.html"> <i class="fa-solid fa-house"></i> Accueil</a>
+                  <a class="nav-link" aria-current="page" href="Accueil.html#ligues"> <i class="fa-solid fa-house"></i> Accueil</a>
                 </li>
                 <li class="nav-item">
                    
                   <a class="nav-link" href="Recherche.html"> <i class="fa-solid fa-magnifying-glass"></i> Recherche</a>
                </li>  
-               <li class="nav-item active">
+               <li class="nav-item">
                 <a class="nav-link" href="Favoris.html"> <i class="fa-regular fa-star"></i> Favoris</a>
              </li>                
               </ul>              
@@ -44,7 +44,7 @@
 <main class="container p-5 flex-grow-1">
 
     <div class="row pb-3">
-      <h1>DÉTAIL DU CLUB</h1>
+      <h1></h1>
     </div>
 
     <div class="row">
@@ -55,27 +55,35 @@
     
             <div class="card p-4">
               <img src="images/manCity.png" class="card-img-top img-fluid" alt="Image de l'entité">
-              <div class="card-body">               
-                <a href="#" class="btn btn-secondary"> PERSONNAGE VEDETTE !</a>
+              <div class="card-body">  
+                <a href="#" class="btn btn-outline-primary text-dark"> PERSONNAGE VEDETTE !</a>             
               </div>
+            </div>
+
+            <div class="pt-2">
+              
+              
             </div>
 
             <div class="champ_cacher">
               <input type="hidden" class="form-control" id="nom" placeholder="nom">
             </div>
 
-            <div class="pt-2">
+            <div class="pt-2 text-center">
               <button type="submit" class="btn btn-primary mb-3">FAVORIS <i class="fa-solid fa-plus"></i> </button>
             </div>
     
           </div>
           <div class="col col-md-8">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Nom de la ligue : Premier ligue</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-              <li class="list-group-item">A fourth item</li>
-              <li class="list-group-item">And a fifth one</li>
+              <li class="list-group-item"> <h1 class="text-center">DÉTAIL DU CLUB</h1> </li>
+              <li class="list-group-item"> Nom de la ligue : Premier ligue </li>
+              <li class="list-group-item">Nom du club : Man City</li>
+              <li class="list-group-item"> ... </li>
+              <li class="list-group-item"> ... </li>
+              <li class="list-group-item"> ... </li>
+              <li class="list-group-item"> ... </li>
+              <li class="list-group-item"> ... </li>
             </ul>
           </div>
         </div>
@@ -88,7 +96,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Description
+                    Description du club
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
