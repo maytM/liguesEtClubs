@@ -154,5 +154,12 @@ footer span{
    color: var(--blue);
 }
 
+@media (max-width:992px) {
+
+   #accordionExample{
+      margin-top: 2em;
+   }
+}
+
 
 

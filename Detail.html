@@ -24,7 +24,7 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item active">
+                <li class="nav-item">
                     
                   <a class="nav-link" aria-current="page" href="Accueil.html"> <i class="fa-solid fa-house"></i> Accueil</a>
                 </li>
@@ -32,8 +32,8 @@
                    
                   <a class="nav-link" href="Recherche.html"> <i class="fa-solid fa-magnifying-glass"></i> Recherche</a>
                </li>  
-               <li class="nav-item">
-                <a class="nav-link" href="Detail.html"> <i class="fa-regular fa-star"></i> Favoris</a>
+               <li class="nav-item active">
+                <a class="nav-link" href="Favoris.html"> <i class="fa-regular fa-star"></i> Favoris</a>
              </li>                
               </ul>              
             </div>
@@ -41,67 +41,70 @@
         </div>
       </nav>
 </header>
-<main class="container  p-5 flex-grow-1">
-    <div class="row g-4 mt-5">
+<main class="container p-5 flex-grow-1">
 
-        <div class="col-12 fs-1 mb-3 text-light">Les Ligues</div>
+    <div class="row pb-3">
+      <h1>DÉTAIL DU CLUB</h1>
+    </div>
 
-        <div class="col-12 col-md-4" >
-          <div class="card shadow h-100">
+    <div class="row">
+      <form class="row" method="POST" action="https://www.w3schools.com/action_page.php">
 
-            <a href="Recherche.html">
-              <img src="images/premierLigue2.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pays et Clubs</h5>
-              <ul>
-                <li>Pays: Angleterre</li>
-                <li>Nombres de Clubs: 5 </li>
-              </ul>
-              <h5 class="card-title">Description</h5>
-              <p class="card-text">Depuis son inauguration en 1992, la Premier League a évolué pour devenir le sommet du football en Angleterre, attirant une attention mondiale avec ses clubs de renommée internationale, ses joueurs talentueux et son niveau de compétition exceptionnel.</p>
-            </div>
-            </a>
-
-          </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-          <div class="card shadow h-100">
-
-            <a href="Recherche.html"> 
-                <img src="images/liga.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pays et Clubs</h5>
-              <ul>
-                <li>Pays: Espagne</li>
-                <li>Nombres de Clubs: 5 </li>
-              </ul>
-              <h5 class="card-title">Description</h5>
-              <p class="card-text">La Liga, lancée en 1929, est devenue l'un des sommets du football en Espagne. Elle attire une attention mondiale grâce à ses clubs renommés, ses joueurs talentueux et son niveau de compétition exceptionnel.</p>
-            </div>
-            </a>
-            
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="card shadow h-100">
-
-               <a href="Recherche.html"> 
-              <img src="images/ligue1.png" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Pays et Clubs</h5>
-              <ul>
-                <li>Pays: France</li>
-                <li>Nombres de Clubs: 5 </li>
-              </ul>
-              <h5 class="card-title">Description</h5>
-                <p class="card-text">La Ligue 1 est le championnat professionnel de football masculin de plus haut niveau de la Fédération française de football. Il regroupe les meilleurs clubs de France métropolitaine et de Monaco.</p>
+        <div class="row">
+          <div class="col-12 col-md-4">
+    
+            <div class="card p-4">
+              <img src="images/manCity.png" class="card-img-top img-fluid" alt="Image de l'entité">
+              <div class="card-body">               
+                <a href="#" class="btn btn-secondary"> PERSONNAGE VEDETTE !</a>
               </div>
-               </a>
-
             </div>
+
+            <div class="champ_cacher">
+              <input type="hidden" class="form-control" id="nom" placeholder="nom">
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="btn btn-primary mb-3">FAVORIS <i class="fa-solid fa-plus"></i> </button>
+            </div>
+    
           </div>
-      </div>
+          <div class="col col-md-8">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Nom de la ligue : Premier ligue</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+              <li class="list-group-item">And a fifth one</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+    
+            <div class="accordion" id="accordionExample">
+    
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Description
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+        </div>
+        
+      </form>
+    </div>
 </main>
 <footer class="container-fluid bg-body-tertiary  py-4">
    <div class="row">
