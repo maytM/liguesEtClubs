@@ -7,13 +7,13 @@
     <script src="https://kit.fontawesome.com/c2865f8771.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/logo1.jpeg">
+    <link rel="icon" href="images/logo.jpeg">
 </head>
 <body class="d-flex flex-column">
 <header class="container-fluid px-0">
     <nav class="navbar navbar-expand-md py-md-0 bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Accueil.html#ligues"><i class="fa-regular fa-futbol"></i> Ligues de football</a>
+          <a class="navbar-brand" href="Accueil.html#ligues"><i class="fa-regular fa-futbol"></i> Ligues de football </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,7 +41,7 @@
         </div>
       </nav>
 </header>
-<main class="container-fluid  p-5 flex-grow-1">
+<main class="container p-5 flex-grow-1">
     <div class="row g-4 ">
 
         <div class="col-12 text-dark" id="ligues">
@@ -69,7 +69,7 @@
               <p class="card-text">Depuis son inauguration en 1992, la Premier League a évolué pour devenir le sommet du football en Angleterre, attirant une attention mondiale avec ses clubs de renommée internationale, ses joueurs talentueux et son niveau de compétition exceptionnel.</p>
             </div>
             </a>
-
+            <button type="button" class="btn btn-outline-info  m-4" data-bs-toggle="modal" data-bs-target="#exampleModal"> En savoir plus <i class="fa-solid fa-circle-info"></i> </button>
           </div>
         </div>
 
@@ -88,7 +88,7 @@
               <p class="card-text">La Liga, lancée en 1929, est devenue l'un des sommets du football en Espagne. Elle attire une attention mondiale grâce à ses clubs renommés, ses joueurs talentueux et son niveau de compétition exceptionnel.</p>
             </div>
             </a>
-            
+            <button type="button" class="btn btn-outline-info  m-4" data-bs-toggle="modal" data-bs-target="#exampleModal2"> En savoir plus <i class="fa-solid fa-circle-info"></i> </button>
           </div>
         </div>
         <div class="col-12 col-md-4">
@@ -106,7 +106,7 @@
                 <p class="card-text">La Ligue 1 est le championnat professionnel de football masculin de plus haut niveau de la Fédération française de football. Il regroupe les meilleurs clubs de France métropolitaine et de Monaco.</p>
               </div>
                </a>
-
+               <button type="button" class="btn btn-outline-info  m-4" data-bs-toggle="modal" data-bs-target="#exampleModal3"> En savoir plus <i class="fa-solid fa-circle-info"></i> </button>
             </div>
           </div>
       </div>
@@ -118,6 +118,83 @@
             </div>
         </div>
 </footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Informations sur Premier ligue</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <h1>Premier ligue</h1>
+       <p>
+        Le Championnat d'Angleterre de football, également connu sous le nom de Premier League, est la plus haute division du football anglais, 
+        constituée de 20 équipes compétitives. Fondée en 1992, la Premier League est réputée pour son intensité, son niveau de jeu élevé et son attrait mondial, 
+        attirant certains des meilleurs joueurs et managers du monde. La compétition se déroule chaque saison de août à mai, avec des matchs disputés dans tout le pays, 
+        et offre un mélange passionnant de talent, de rivalités historiques et de drames. Les clubs se disputent le titre de champion ainsi que les places qualificatives pour les compétitions européennes. 
+        La Premier League a grandement contribué à faire du football anglais l'un des sports les plus populaires et les plus suivis au monde. Pour en savoir plus, consultez <a href="https://fr.wikipedia.org/wiki/Championnat_d'Angleterre_de_football" title="wikipedia"> wikipedia </a>.
+       </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Informations sur LaLiga </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>LaLiga</h1>
+        <p>
+          La Liga, également connue sous le nom de Primera División, est le sommet du football espagnol, comptant 20 équipes de premier plan. 
+          Établie en 1929, La Liga est célèbre pour son style de jeu technique, sa rivalité intense entre les clubs emblématiques tels que le Real Madrid et le FC Barcelone,
+           ainsi que pour ses stars mondiales telles que Lionel Messi et Cristiano Ronaldo. La saison, qui se déroule généralement d'août à mai, est marquée par des matchs passionnants et des luttes acharnées pour le titre de champion, l
+           es places en Ligue des Champions et les positions de maintien. La Liga est l'une des ligues les plus regardées au monde, attirant des millions de fans à travers le globe avec son football de haute qualité et son atmosphère électrique dans les stades emblématiques d'Espagne. 
+          Pour en savoir plus, consultez <a href="https://fr.wikipedia.org/wiki/Championnat_d%27Espagne_de_football" title="wikipedia"> wikipedia </a>.
+        </p>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Informations sur la ligue 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <h1> ligue 1 </h1>
+       <p>
+        La Ligue 1, le championnat de football de France, est une compétition de premier plan comptant 20 équipes. 
+        Fondée en 1932, la Ligue 1 est reconnue pour son mélange de talents nationaux et internationaux, 
+        ainsi que pour ses clubs historiques tels que le Paris Saint-Germain, l'Olympique de Marseille et l'Olympique Lyonnais. 
+        La saison de Ligue 1, qui s'étend généralement de août à mai, offre aux fans des matchs palpitants et des moments mémorables alors que les équipes rivalisent pour remporter le titre de champion de France, se qualifier pour les compétitions européennes et éviter la relégation.
+         La ligue est également réputée pour son développement des jeunes talents, 
+        contribuant à façonner l'avenir du football français. Pour en savoir plus, consultez <a href="https://fr.wikipedia.org/wiki/Championnat_de_France_de_football" title="wikipedia"> wikipedia </a>.
+       </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -117,7 +117,7 @@ main a > .entity-card{
 
 /* ballon flotant */
 .image_float img {
-   animation: float 3s linear infinite; /* rotate 3s linear infinite;  Ajout de l'animation de rotation */
+   animation: float 3s linear infinite; 
    border-radius: 50%;
    width: 100px;
    margin-top: 3rem;
@@ -177,7 +177,6 @@ main a > .entity-card{
 }
 
 /* css footer*/
-
 footer span{
    color: var(--blue);
 }
