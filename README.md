@@ -1,4 +1,4 @@
-Projet sur les Ligues et Clubs de Football
+Projet sur les Ligues et Clubs de Football :
 
 Ce projet est une réalisation en HTML, CSS, Bootstrap et Font Awesome qui explore les relations entre les ligues de football et les clubs qui y participent. L'objectif principal était de créer une interface conviviale et responsive permettant aux utilisateurs d'explorer différentes ligues et les clubs qui y sont associés.
 
