@@ -6,6 +6,8 @@
    --white:#fff;
    --black:#303030;
    --blue:#17a2b8;
+   --blue-marine:#000080;
+   --bleu-clair : #87CEEB;
    /* 2rem == 2 fois la taille de la police de l'élément racine  HTML */
    --border:.1rem solid var(--light-color);
    --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
@@ -104,11 +106,9 @@ main a{
    color: black;
 }
 
-main a > .entity-card{
-   
+main a > .entity-card{   
    height: 100%;
    display: flex;
-
 }
 
 .table img{
@@ -116,14 +116,14 @@ main a > .entity-card{
 }
 
 /* ballon flotant */
-.image_float img {
+.image_float img{
    animation: float 3s linear infinite; 
    border-radius: 50%;
    width: 100px;
    margin-top: 3rem;
 }
 
-@keyframes float {
+@keyframes float{
    0%, 100% {
        transform: translateY(0rem);
    }
@@ -187,8 +187,7 @@ footer span{
    }
 }
 
-@media (max-width:767px) {
-  
+@media (max-width:767px) { 
    main .section_listeClubs-formulaire{
       flex-direction: column-reverse;
    }

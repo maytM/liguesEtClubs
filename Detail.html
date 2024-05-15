@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
 <main class="container p-5 flex-grow-1">
 
     <div class="row pb-3">
-      <h1></h1>
+      <!-- <h1></h1> -->
     </div>
 
     <div class="row">
@@ -56,7 +56,7 @@
             <div class="card p-4">
               <img src="images/manCity.png" class="card-img-top img-fluid" alt="Image de l'entité">
               <div class="card-body">  
-                <a href="#" class="btn btn-outline-primary text-dark"> PERSONNAGE VEDETTE !</a>             
+                <a href="#" class="btn btn-outline-info text-dark"> PERSONNAGE VEDETTE !</a>             
               </div>
             </div>
 
@@ -66,7 +66,7 @@
             </div>
 
             <div class="champ_cacher">
-              <input type="hidden" class="form-control" id="nom" placeholder="nom">
+              <input type="hidden" class="form-control" id="nom" name="nom">
             </div>
 
             <div class="pt-2 text-center">
@@ -77,13 +77,13 @@
           <div class="col col-md-8">
             <ul class="list-group list-group-flush">
               <li class="list-group-item"> <h1 class="text-center">DÉTAIL DU CLUB</h1> </li>
-              <li class="list-group-item"> Nom de la ligue : Premier ligue </li>
-              <li class="list-group-item">Nom du club : Man City</li>
-              <li class="list-group-item"> ... </li>
-              <li class="list-group-item"> ... </li>
-              <li class="list-group-item"> ... </li>
-              <li class="list-group-item"> ... </li>
-              <li class="list-group-item"> ... </li>
+              <li class="list-group-item">Nom de la ligue : <span class="text-info">Premier ligue</span></li>
+              <li class="list-group-item">Nom du club : <span class="text-info">Manchester City</span></li>
+              <li class="list-group-item">Stade : <span class="text-info">Etihad Stadium</span> </li>
+              <li class="list-group-item">Capacité du stade : <span class="text-info">Environ 55 000 places</span></li>
+              <li class="list-group-item">Couleurs du club : <span class="text-info">Ciel et marine</span></li>
+              <li class="list-group-item">Surnom : <span class="text-info">Les Citizens</span></li>
+              <li class="list-group-item">Entraîneur actuel : <span class="text-info">Pep Guardiola</span></li>
             </ul>
           </div>
         </div>
@@ -96,12 +96,22 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Description du club
+                    <span class="fs-2 text-dark">Description du club</span>
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                    <p>
+                      Manchester City est un club de football basé à Manchester, en Angleterre. Fondé en 1880 sous le nom de "St. Mark's (West Gorton)", il a ensuite été renommé "Ardwick Association Football Club" en 1887 avant de prendre son nom actuel en 1894. Le club évolue au Etihad Stadium, qui a une capacité d'environ 55 000 places.
+
+                      Historiquement, Manchester City a connu des périodes de succès alternant avec des périodes moins glorieuses. Mais depuis le début des années 2000, le club a connu une transformation radicale, en grande partie grâce à des investissements massifs du groupe Abu Dhabi United Group, qui a pris possession du club en 2008.
+
+                      Sous la direction de différents entraîneurs tels que Roberto Mancini, Manuel Pellegrini et surtout Pep Guardiola, Manchester City a remporté plusieurs titres majeurs, notamment la Premier League anglaise, la FA Cup et la League Cup. Le club est également devenu un acteur majeur sur la scène européenne, atteignant régulièrement les phases finales de la Ligue des champions de l'UEFA.
+
+                      Manchester City est réputé pour son style de jeu offensif et attractif, mettant en avant la possession de balle, le jeu de passes rapides et une pression intense sur l'adversaire. Le club compte également sur un effectif composé de joueurs talentueux et souvent recrutés à prix élevé sur le marché des transferts.
+                    </p>
+
                   </div>
                 </div>
               </div>
